@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Font Awesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS File Link  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <h1>NORTH COFFEE SHOP <span>(creating moments)</span></h1>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g293936-d2621721-Reviews-NORTH_END_coffee_roasters_Shahajadpur-Dhaka_City_Dhaka_Division.html" class="logo"><i class="fas fa-mug-hot"></i></a>
+        <nav class="navbar">
+            <button class="button">HOME</button>
+            <button class="button">About</button>
+            <input type="button" class="button" value="Review">
+            <button class="button">Booking</button>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>Fresh Coffee in the Morning</h3>
+            </div>
+            <div class="image">
+                <img src="images/home-img-1.png" class="main-home-image" alt="">
+            </div>
+        </div>
+        <div class="image-slider">
+            <img src="images/home-img-1.png" alt="">
+            <img src="images/home-img-2.png" alt="">
+            <img src="images/home-img-3.png" alt="">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h1 class="heading">About Us <span>Why Choose Us</span></h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/about-img.png" alt="">
+            </div>
+            <div class="content">
+                <h3 class="title">What Makes Our Coffee Special!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum laboriosam reprehenderit ipsa id
+                    repellat odio illum, voluptas, necessitatibus assumenda adipisci. Hic, maiores iste? Excepturi illo
+                    dolore mollitia qui quia.</p>
+                <a href="#" class="btn">Read More</a>
+                <div class="icons-container">
+                    <div class="icons">
+                        <img src="images/about-icon-1.png" alt="">
+                        <h3>Quality Coffee</h3>
+                    </div>
+                    <div class="icons">
+                        <img src="images/about-icon-2.png" alt="">
+                        <h3>Our Branches</h3>
+                    </div>
+                    <div class="icons">
+                        <img src="images/about-icon-3.png" alt="">
+                        <h3>Free Delivery</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+        <h1 class="heading">Our Menu <span>Popular Menu</span></h1>
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="images/menu-1.png" alt="">
+                <div class="content">
+                    <h3>Our Special Coffee</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, sed.</p>
+                    <span>$8.99</span>
+                </div>
+            </a>
+            <!-- Additional menu items go here -->
+        </div>
+    </section>
+
+    <!-- REVIEW -->
+    <section class="review" id="review">
+        <h1 class="heading">Reviews <span>What People Say</span></h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <!-- Review content -->
+                </div>
+                <!-- Additional review slides go here -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- BOOK -->
+    <section class="book" id="book">
+        <h1 class="heading">Booking <span>Reserve a Table</span></h1>
+        <form action="">
+            <!-- Booking form fields go here -->
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Our Branches</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> India</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> USA</a>
+                <!-- Add more branches -->
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i> Home</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i> About</a>
+                <!-- Add more quick links -->
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+                <a href="#"><i class="fas fa-envelope"></i> coffee@gmail.com</a>
+                <!-- Add more contact info -->
+            </div>
+            <div class="box">
+                <h3>Social Media</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <!-- Add more social media links -->
+            </div>
+        </div>
+        <div class="credit">Created by <span>Mr. Web Designer</span> | All Rights Reserved</div>
+    </section>
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        // JavaScript functionality (e.g., menu toggle, image slider) can be added here
+        let menu = document.querySelector('#menu-btn');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+};
+
+window.onscroll = () => {
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+};
+
+document.querySelectorAll('.image-slider img').forEach(images => {
+    images.onclick = () => {
+        var src = images.getAttribute('src');
+        document.querySelector('.main-home-image').src = src;
+    };
+});
+
+var swiper = new Swiper(".review-slider", {
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    loop: true,
+    grabCursor: true,
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        }
+    },
+});
+    </script>
+</body>
+</html>
